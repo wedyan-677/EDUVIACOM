@@ -1,0 +1,20 @@
+{
+  "name": "EDUVIA | إيدوفيا",
+  "short_name": "EDUVIA",
+  "description": "مساحة تعليمية إبداعية تقدم خدمات للطلاب من المرحلة الابتدائية حتى الجامعة.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f3ea",
+  "theme_color": "#0a1220",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

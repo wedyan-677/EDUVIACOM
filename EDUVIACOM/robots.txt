@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Local demo dashboard — not for indexing.
+Disallow: /admin.html
+Disallow: /404.html
+
+Sitemap: https://eduvia.example/sitemap.xml

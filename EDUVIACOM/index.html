@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    document.documentElement.classList.add("js");
+    window.setTimeout(function () {
+      if (!window.EDUVIA) document.documentElement.classList.remove("js");
+    }, 3000);
+  </script>
+  <title>EDUVIA | إيدوفيا — إبداع تعليمي يصنع الفرق</title>
+  <meta name="description" content="إيدوفيا منصة تعليمية سعودية تقدم خدمات إبداعية للطلاب والطالبات من المرحلة الابتدائية حتى الجامعة: مطويات، أوراق عمل، عروض تقديمية، تلخيص، مشاريع وأنشطة.">
+  <meta name="theme-color" content="#0a1220">
+  <link rel="canonical" href="https://eduvia.example/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:site_name" content="EDUVIA | إيدوفيا">
+  <meta property="og:title" content="EDUVIA | إيدوفيا — إبداع تعليمي يصنع الفرق">
+  <meta property="og:description" content="نرافق رحلتك التعليمية بخدمات إبداعية واحترافية، من الأنشطة والمطويات إلى العروض التقديمية والمشاريع الجامعية.">
+  <meta property="og:url" content="https://eduvia.example/">
+  <meta property="og:image" content="https://eduvia.example/assets/img/hero-workspace.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Outfit:wght@400;500;600&family=Tajawal:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "EDUVIA",
+    "alternateName": "إيدوفيا",
+    "url": "https://eduvia.example/",
+    "logo": "https://eduvia.example/assets/img/logo.svg",
+    "description": "منصة تعليمية وإبداعية تقدم خدمات للطلاب والطالبات من المرحلة الابتدائية حتى الجامعة في المملكة العربية السعودية.",
+    "email": "info@eduvia.example",
+    "founder": {
+      "@type": "Person",
+      "name": "قمر الجهني",
+      "jobTitle": "المؤسسة والمعلمة"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "المملكة العربية السعودية"
+    },
+    "knowsAbout": ["تصميم المطويات التعليمية", "أوراق العمل", "العروض التقديمية", "تلخيص المناهج", "المشاريع الجامعية"]
+  }
+  </script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+
+  <div class="topbar">
+    <div class="container container--wide topbar__inner">
+      <span class="topbar__note"><i class="topbar__dot"></i> مساحة تعليمية إبداعية · المملكة العربية السعودية</span>
+      <div class="topbar__meta">
+        <span>من الابتدائي إلى الجامعة</span>
+        <span class="topbar__lang">
+          <svg class="icon" aria-hidden="true"><use href="#i-globe"></use></svg>
+          العربية
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container container--wide header__inner">
+      <a class="brand" href="index.html" aria-label="إيدوفيا — الصفحة الرئيسية">
+        <img class="brand__mark" src="assets/img/logo.svg" alt="" width="45" height="45">
+        <span class="brand__text">
+          <span class="brand__latin">EDUVIA</span>
+          <span class="brand__arabic">إيدوفيا</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="التنقل الرئيسي">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="index.html" aria-current="page">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+          <li class="nav-item nav-item--dropdown">
+            <a class="nav-link" href="services.html">
+              الخدمات
+              <svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg>
+            </a>
+            <div class="nav-dropdown">
+              <a href="school-services.html">
+                <span class="nav-dropdown__icon"><svg class="icon" aria-hidden="true"><use href="#i-book"></use></svg></span>
+                <span><strong>الخدمات المدرسية</strong><small>ابتدائي · متوسط · ثانوي</small></span>
+              </a>
+              <a href="university-services.html">
+                <span class="nav-dropdown__icon"><svg class="icon" aria-hidden="true"><use href="#i-university"></use></svg></span>
+                <span><strong>الخدمات الجامعية</strong><small>مشاريع · أبحاث · عروض</small></span>
+              </a>
+              <a href="services.html">
+                <span class="nav-dropdown__icon"><svg class="icon" aria-hidden="true"><use href="#i-grid"></use></svg></span>
+                <span><strong>جميع الخدمات</strong><small>14 خدمة متخصصة</small></span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">معرض الأعمال</a></li>
+          <li class="nav-item"><a class="nav-link" href="request.html">اطلب خدمتك</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+        </ul>
+        <a class="btn btn--primary site-nav__cta" href="request.html">
+          اطلب خدمتك الآن
+          <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
+        </a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--navy header__cta" href="request.html">
+          اطلب خدمتك
+          <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="فتح القائمة">
+          <svg class="icon nav-toggle__open" aria-hidden="true"><use href="#i-menu"></use></svg>
+          <svg class="icon nav-toggle__close" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container container--wide hero__grid">
+        <div class="hero__copy">
+          <span class="eyebrow hero__eyebrow reveal">استوديو تعليمي إبداعي · EDUVIA</span>
+          <h1 class="reveal" data-delay="1">إيدوفيا.. <span class="hero__accent">إبداع تعليمي</span> يصنع الفرق</h1>
+          <p class="hero__lead reveal" data-delay="2">نرافق رحلتك التعليمية بخدمات إبداعية واحترافية، من الأنشطة والمطويات إلى العروض التقديمية والمشاريع الجامعية.</p>
+          <div class="hero__actions reveal" data-delay="3">
+            <a class="btn btn--primary" href="services.html">
+              اكتشف خدماتنا
+              <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+            <a class="btn btn--outline" href="request.html">اطلب خدمتك الآن</a>
+            <a class="btn btn--ghost" href="portfolio.html">
+              استعرض أعمالنا
+              <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+          </div>
+          <div class="hero__proof reveal" data-delay="4">
+            <div class="hero__proof-item">
+              <span class="hero__proof-icon"><svg class="icon" aria-hidden="true"><use href="#i-university"></use></svg></span>
+              <span><strong>من الابتدائي إلى الجامعة</strong><small>مسار واحد لكل المراحل</small></span>
+            </div>
+            <div class="hero__proof-item">
+              <span class="hero__proof-icon"><svg class="icon" aria-hidden="true"><use href="#i-check-circle"></use></svg></span>
+              <span><strong>ملفات جاهزة للاستخدام</strong><small>تنسيق وإخراج بعناية</small></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="2" aria-hidden="true">
+          <div class="hero-visual__blob"></div>
+          <div class="hero-visual__ring"></div>
+          <span class="hero-visual__star"><svg class="icon"><use href="#i-sparkle"></use></svg></span>
+          <span class="hero-visual__spark"></span>
+
+          <div class="hero-panel">
+            <div class="hero-panel__head">
+              <span class="hero-panel__dots"><span></span><span></span><span></span></span>
+              <span class="hero-panel__title">مساحة إيدوفيا</span>
+              <span class="hero-panel__badge">إبداع</span>
+            </div>
+            <div class="hero-panel__body">
+              <div class="hero-panel__canvas">
+                <span class="hero-panel__kicker">EDUVIA · LEARNING ATELIER</span>
+                <h3>تعلّم واضح،<br>وشكل يستحق.</h3>
+                <p>من الفكرة إلى الملف النهائي، بترتيب يخدم الطالب ويحترم التفاصيل.</p>
+                <div class="hero-panel__art">
+                  <span class="hero-panel__sheet"></span>
+                  <span class="hero-panel__sheet"></span>
+                  <span class="hero-panel__sheet"></span>
+                </div>
+              </div>
+              <div class="hero-panel__bar">
+                <span class="hero-panel__bar-icon"><svg class="icon"><use href="#i-presentation"></use></svg></span>
+                <span class="hero-panel__bar-copy"><strong>عرض تقديمي متكامل</strong><small>محتوى · تصميم · ترتيب بصري</small></span>
+                <span class="hero-panel__progress"><span>88%</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-float hero-float--one">
+            <span class="hero-float__icon"><svg class="icon"><use href="#i-brochure"></use></svg></span>
+            <span class="hero-float__copy"><strong>مطوية تعليمية</strong><small>فكرة واحدة، عرض واضح</small></span>
+          </div>
+          <div class="hero-float hero-float--two">
+            <span class="hero-float__icon"><svg class="icon"><use href="#i-summary"></use></svg></span>
+            <span class="hero-float__copy"><strong>تلخيص منظم</strong><small>معلومة مركّزة للمراجعة</small></span>
+          </div>
+          <div class="hero-float hero-float--three">
+            <span class="hero-float__icon"><svg class="icon"><use href="#i-sparkle"></use></svg></span>
+            <span class="hero-float__copy"><strong>لمسة إبداعية</strong><small>تفاصيل تصنع الفرق</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-strip">
+      <div class="container container--wide trust-strip__inner">
+        <div class="trust-strip__intro">
+          <span class="trust-strip__medal"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg></span>
+          <span><strong>تعليم يُفهم، وتصميم يُحترم.</strong> كل خدمة تبدأ من هدف الطالب، وتنتهي بملف مرتب وجاهز.</span>
+        </div>
+        <div class="trust-stat"><strong>8</strong><span>خدمات مدرسية</span></div>
+        <div class="trust-stat"><strong>6</strong><span>خدمات جامعية</span></div>
+        <div class="trust-stat"><strong>4</strong><span>مراحل دراسية</span></div>
+      </div>
+    </div>
+
+    <section class="section section--white" id="services">
+      <div class="container container--wide">
+        <div class="section-head reveal">
+          <div class="section-head__copy">
+            <span class="eyebrow">خدمات منظمة لكل مرحلة</span>
+            <h2>ما الذي نصنعه معك؟</h2>
+            <p>خدمات تعليمية وإبداعية مصممة لتحويل المحتوى الدراسي إلى تجربة أوضح، أجمل، وأسهل في الاستخدام.</p>
+          </div>
+          <a class="btn btn--outline btn--sm" href="services.html">
+            كل الخدمات
+            <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
+          </a>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-card__visual" style="--tone:#e8e4f9;--accent:#5b49bd">
+              <span class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-brochure"></use></svg></span>
+              <span class="service-card__tag">مدرسي</span>
+              <div class="service-card__art" aria-hidden="true"></div>
+            </div>
+            <div class="service-card__body">
+              <h3>المطويات التعليمية</h3>
+              <p>مطويات واضحة ومنظمة تقرّب المعلومة وتجعلها أسهل في القراءة والتذكّر.</p>
+              <div class="service-card__foot">
+                <span class="service-card__meta"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> إبداعية وقابلة للطباعة</span>
+                <a class="service-card__link" href="request.html?service=brochure">اطلب الخدمة <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-delay="1">
+            <div class="service-card__visual" style="--tone:#e2efea;--accent:#4f7d6c">
+              <span class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-worksheet"></use></svg></span>
+              <span class="service-card__tag">مدرسي</span>
+              <div class="service-card__art" aria-hidden="true"></div>
+            </div>
+            <div class="service-card__body">
+              <h3>أوراق العمل</h3>
+              <p>أوراق عمل متدرجة المستوى، مرتبة بصريًا، ومهيأة للطباعة والاستخدام الصفي.</p>
+              <div class="service-card__foot">
+                <span class="service-card__meta"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> مناسبة للمرحلة</span>
+                <a class="service-card__link" href="request.html?service=worksheets">اطلب الخدمة <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-delay="2">
+            <div class="service-card__visual" style="--tone:#f2e9d8;--accent:#8a6b35">
+              <span class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-presentation"></use></svg></span>
+              <span class="service-card__tag">مدرسي</span>
+              <div class="service-card__art" aria-hidden="true"></div>
+            </div>
+            <div class="service-card__body">
+              <h3>العروض التقديمية</h3>
+              <p>عروض PowerPoint بتسلسل واضح وتصميم هادئ يجعل الفكرة هي البطل.</p>
+              <div class="service-card__foot">
+                <span class="service-card__meta"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> تصميم وتنسيق كامل</span>
+                <a class="service-card__link" href="request.html?service=presentation">اطلب الخدمة <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__visual" style="--tone:#e3edf5;--accent:#3e7897">
+              <span class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-summary"></use></svg></span>
+              <span class="service-card__tag">مدرسي</span>
+              <div class="service-card__art" aria-hidden="true"></div>
+            </div>
+            <div class="service-card__body">
+              <h3>الشرح والتلخيص</h3>
+              <p>شرح مبسّط وملخصات مركزة تحافظ على جوهر المادة وتسهّل المراجعة.</p>
+              <div class="service-card__foot">
+                <span class="service-card__meta"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> لجميع المواد</span>
+                <a class="service-card__link" href="request.html?service=summaries">اطلب الخدمة <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-delay="1">
+            <div class="service-card__visual" style="--tone:#ebeadf;--accent:#6a6b4f">
+              <span class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-project"></use></svg></span>
+              <span class="service-card__tag">مدرسي</span>
+              <div class="service-card__art" aria-hidden="true"></div>
+            </div>
+            <div class="service-card__body">
+              <h3>المشاريع المدرسية</h3>
+              <p>من الفكرة والبحث إلى التصميم والعرض النهائي، مشروع متكامل يعبّر عن الطالب.</p>
+              <div class="service-card__foot">
+                <span class="service-card__meta"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> إخراج متكامل</span>
+                <a class="service-card__link" href="request.html?service=school-projects">اطلب الخدمة <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-delay="2">
+            <div class="service-card__visual" style="--tone:#e9e3f7;--accent:#614cb5">
+              <span class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-university"></use></svg></span>
+              <span class="service-card__tag">جامعي</span>
+              <div class="service-card__art" aria-hidden="true"></div>
+            </div>
+            <div class="service-card__body">
+              <h3>المشاريع الجامعية</h3>
+              <p>إعداد وتنسيق أكاديمي أنيق، مع مراعاة متطلبات المقرر وإخراج احترافي.</p>
+              <div class="service-card__foot">
+                <span class="service-card__meta"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> تنسيق أكاديمي</span>
+                <a class="service-card__link" href="request.html?service=university-projects">اطلب الخدمة <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ivory">
+      <div class="container container--wide split">
+        <div class="split__media reveal">
+          <div class="media-frame media-frame--about">
+            <img src="assets/img/about-atelier.jpg" alt="مساحة عمل إبداعية تضم أدوات التصميم والقص والتنسيق" width="1200" height="900" loading="lazy">
+            <div class="media-float">
+              <span class="media-float__icon"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"></use></svg></span>
+              <span><strong>هوية بصرية واحدة</strong><small>في كل ملف نسلّمه</small></span>
+            </div>
+            <div class="media-frame__caption">
+              <strong>مساحة تصنع التفاصيل</strong>
+              <small>فكرة · ترتيب · تصميم · مراجعة</small>
+            </div>
+          </div>
+        </div>
+        <div class="split__content reveal" data-delay="1">
+          <span class="eyebrow">من نحن</span>
+          <h2>علامة تعليمية تؤمن أن الشكل جزء من الفهم.</h2>
+          <p>إيدوفيا مساحة تعليمية وإبداعية أسستها المعلمة قمر الجهني، لترافق الطلاب والطالبات في رحلتهم الدراسية بخدمات تجمع بين وضوح المحتوى وجمال العرض. نبدأ من احتياج الطالب، ثم نبني عملًا مناسبًا لمرحلته وهدفه.</p>
+          <ul class="mini-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check-circle"></use></svg> محتوى تعليمي مفهوم، لا مجرد تصاميم جذابة.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check-circle"></use></svg> ملفات منظمة وسهلة الاستخدام والطباعة.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check-circle"></use></svg> متابعة واضحة من الفكرة حتى التسليم.</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn--navy" href="about.html">
+              تعرّف على إيدوفيا
+              <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+            <a class="btn btn--ghost" href="contact.html">تواصل معنا</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--navy">
+      <div class="container container--wide">
+        <div class="section-head section-head--light reveal">
+          <div class="section-head__copy">
+            <span class="eyebrow eyebrow--light">لماذا إيدوفيا؟</span>
+            <h2>لأن العمل التعليمي يستحق عناية أكثر.</h2>
+            <p>أربع قيم تظهر في كل تفصيل، من ترتيب المعلومة إلى شكل الملف الذي يصلك.</p>
+          </div>
+        </div>
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <span class="why-card__num">01</span>
+            <span class="why-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg></span>
+            <h3>جودة قبل كل شيء</h3>
+            <p>مراجعة للمحتوى والتنسيق قبل التسليم، حتى يصل العمل واضحًا ومكتملًا.</p>
+          </article>
+          <article class="why-card reveal" data-delay="1">
+            <span class="why-card__num">02</span>
+            <span class="why-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-palette"></use></svg></span>
+            <h3>إبداع بلا فوضى</h3>
+            <p>لمسات بصرية هادئة تخدم الفكرة، وتبتعد عن الزحام والتفاصيل غير الضرورية.</p>
+          </article>
+          <article class="why-card reveal" data-delay="2">
+            <span class="why-card__num">03</span>
+            <span class="why-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-layers"></use></svg></span>
+            <h3>تنوع من الابتدائي للجامعة</h3>
+            <p>خبرة في التعامل مع احتياجات المراحل المختلفة، من التبسيط إلى الإخراج الأكاديمي.</p>
+          </article>
+          <article class="why-card reveal" data-delay="3">
+            <span class="why-card__num">04</span>
+            <span class="why-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"></use></svg></span>
+            <h3>اهتمام بالتفاصيل</h3>
+            <p>الهوامش، الخطوط، الألوان، وتسلسل المعلومة: تفاصيل صغيرة تصنع تجربة مختلفة.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container container--wide video-feature">
+        <div class="video-feature__copy reveal">
+          <span class="eyebrow">لمحة من إيدوفيا</span>
+          <h2>حين تبدأ الفكرة، نمنحها مساحة لتظهر.</h2>
+          <p>منظومة عمل هادئة ومنظمة: نقرأ التفاصيل، نرتّب المحتوى، ثم نبني شكلًا يخدم التعلّم. شاهد لمحة قصيرة من المساحة التي تُصنع فيها الأعمال.</p>
+          <ul class="video-feature__points">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check-circle"></use></svg> ترتيب المحتوى قبل التصميم.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check-circle"></use></svg> ملفات قابلة للتعديل والاستخدام.</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check-circle"></use></svg> مراجعة نهائية قبل التسليم.</li>
+          </ul>
+          <div class="btn-row" style="margin-block-start:1.5rem">
+            <a class="btn btn--outline" href="portfolio.html">
+              استعرض نماذج الأعمال
+              <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+          </div>
+        </div>
+        <div class="video-frame reveal" data-delay="1">
+          <video poster="assets/img/showreel-poster.jpg" preload="none" playsinline aria-label="فيديو تعريفي قصير لمساحة العمل التعليمية">
+            <source src="assets/img/eduvia-showreel.mp4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو.
+          </video>
+          <button class="video-overlay" type="button" aria-label="تشغيل الفيديو التعريفي">
+            <span class="video-play"><svg class="icon" aria-hidden="true"><use href="#i-play"></use></svg></span>
+            <strong>شاهد لمحة إيدوفيا</strong>
+            <small>11 ثانية · بدون صوت</small>
+          </button>
+          <span class="video-note">فيديو تعريفي · Mixkit</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ivory">
+      <div class="container container--wide">
+        <div class="section-head reveal">
+          <div class="section-head__copy">
+            <span class="eyebrow">مساران واضحان</span>
+            <h2>أين أنت في رحلتك الدراسية؟</h2>
+            <p>اختر المسار الأقرب لك، وستجد خدمات مرتبة حسب المرحلة والاحتياج.</p>
+          </div>
+        </div>
+        <div class="pathways">
+          <article class="pathway pathway--school reveal">
+            <span class="pathway__badge">من الصف الأول حتى الثانوية</span>
+            <h3>المرحلة المدرسية</h3>
+            <p>دعم بصري وتعليمي يجعل الدراسة أوضح، والمشاريع أكثر تنظيمًا وتميزًا.</p>
+            <div class="pathway__chips">
+              <span>مطويات</span><span>أوراق عمل</span><span>عروض</span><span>أنشطة</span><span>تلخيص</span>
+            </div>
+            <a class="arrow-link" href="school-services.html">اكتشف الخدمات المدرسية <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+          </article>
+          <article class="pathway pathway--university reveal" data-delay="1">
+            <span class="pathway__badge">مشاريع · أبحاث · عروض</span>
+            <h3>المرحلة الجامعية</h3>
+            <p>إخراج أكاديمي أنيق وتنسيق احترافي يساعدك على عرض جهدك بالشكل الذي يستحقه.</p>
+            <div class="pathway__chips">
+              <span>مشاريع جامعية</span><span>أبحاث</span><span>إنفوجرافيك</span><span>عروض</span>
+            </div>
+            <a class="arrow-link" href="university-services.html">اكتشف الخدمات الجامعية <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container container--wide">
+        <div class="section-head section-head--center reveal">
+          <div class="section-head__copy">
+            <span class="eyebrow">طريقة العمل</span>
+            <h2>من أول رسالة إلى الملف النهائي.</h2>
+            <p>أربع خطوات هادئة وواضحة، تحفظ لك الوقت وتضمن أن النتيجة تشبه ما تتخيله.</p>
+          </div>
+        </div>
+        <div class="process">
+          <article class="process__item reveal">
+            <span class="process__step">STEP 01</span>
+            <h3>نسمعك</h3>
+            <p>تحدد المرحلة، الخدمة، والهدف من العمل. نسأل عن التفاصيل المهمة قبل البدء.</p>
+          </article>
+          <article class="process__item reveal" data-delay="1">
+            <span class="process__step">STEP 02</span>
+            <h3>نرسم الاتجاه</h3>
+            <p>نقترح ترتيب المحتوى والأسلوب البصري المناسب للمرحلة والمناسبة.</p>
+          </article>
+          <article class="process__item reveal" data-delay="2">
+            <span class="process__step">STEP 03</span>
+            <h3>ننفذ بعناية</h3>
+            <p>نصمم وننسق ونراجع، مع الحفاظ على وضوح المعلومة وسهولة الاستخدام.</p>
+          </article>
+          <article class="process__item reveal" data-delay="3">
+            <span class="process__step">STEP 04</span>
+            <h3>نسلّم ونطوّر</h3>
+            <p>تستلم ملفاتك منظمة، ونراجع معك أي ملاحظة قبل اعتماد النسخة النهائية.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ivory">
+      <div class="container container--wide">
+        <div class="section-head reveal">
+          <div class="section-head__copy">
+            <span class="eyebrow">معرض الأعمال</span>
+            <h2>نماذج تعرض الفكرة، لا النص فقط.</h2>
+            <p>لمحة من أساليب الإخراج التي نعمل بها في المطويات والعروض والمشاريع والأنشطة.</p>
+          </div>
+          <a class="btn btn--outline btn--sm" href="portfolio.html">
+            كل الأعمال
+            <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
+          </a>
+        </div>
+
+        <div class="works-grid">
+          <article class="work-card reveal" data-work-card data-category="brochure" data-title="مطوية «رحلة الماء»" data-cat="مطويات تعليمية · علوم" data-desc="نموذج استعراضي لمطوية ثلاثية الطيّات تحوّل دورة الماء إلى رحلة بصرية واضحة، مع تسلسل معلوماتي وألوان هادئة." data-tags="مطويات|علوم|ابتدائي" data-cta="request.html?service=brochure">
+            <div class="work-card__visual" style="--art-bg:#e8edf4">
+              <span class="work-card__badge">نموذج استعراضي</span>
+              <div class="mockup mockup--brochure">
+                <span class="mockup__label">EDUVIA · BROCHURE</span>
+                <div class="mockup__panel">
+                  <h4>رحلة<br>الماء</h4>
+                  <span class="mockup__orb"></span>
+                  <p>من البحر إلى السماء، ثم يعود.</p>
+                </div>
+                <div class="mockup__panel">
+                  <h4>ثلاث مراحل</h4>
+                  <p>تبخّر · تكاثف · هطول</p>
+                  <div class="mockup__lines"><i></i><i></i><i></i></div>
+                </div>
+                <div class="mockup__panel">
+                  <h4>فكّر معنا</h4>
+                  <p>أين تذهب قطرة الماء بعد المطر؟</p>
+                </div>
+              </div>
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__cat">مطويات تعليمية · علوم</span>
+              <h3>مطوية «رحلة الماء»</h3>
+              <p>فكرة علمية في ثلاث طيّات واضحة.</p>
+            </div>
+            <button class="work-card__open" type="button" aria-label="معاينة مطوية رحلة الماء"></button>
+          </article>
+
+          <article class="work-card reveal" data-delay="1" data-work-card data-category="presentation" data-title="عرض «الطاقة المتجددة»" data-cat="عروض تقديمية · علوم" data-desc="نموذج استعراضي لعرض تقديمي بأسلوب داكن أنيق، يوزّع المعلومة على شرائح قليلة العناصر وواضحة التسلسل." data-tags="PowerPoint|عروض|متوسط" data-cta="request.html?service=presentation">
+            <div class="work-card__visual" style="--art-bg:#dfe3ec">
+              <span class="work-card__badge">نموذج استعراضي</span>
+              <div class="mockup mockup--slides">
+                <span class="mockup__label">EDUVIA · PRESENTATION</span>
+                <div class="mockup__screen">
+                  <h4>الطاقة<br>المتجددة</h4>
+                  <div class="mockup__bars"><span></span><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__cat">عروض تقديمية · علوم</span>
+              <h3>عرض «الطاقة المتجددة»</h3>
+              <p>تسلسل بصري يجعل الفكرة أسهل.</p>
+            </div>
+            <button class="work-card__open" type="button" aria-label="معاينة عرض الطاقة المتجددة"></button>
+          </article>
+
+          <article class="work-card reveal" data-delay="2" data-work-card data-category="project" data-title="مشروع «رؤية 2030»" data-cat="مشاريع مدرسية · اجتماعيات" data-desc="نموذج استعراضي لمشروع مدرسي بهوية بصرية مستوحاة من الهوية السعودية، مع مساحة للمحتوى والصور والمصادر." data-tags="مشاريع|اجتماعيات|ثانوي" data-cta="request.html?service=school-projects">
+            <div class="work-card__visual" style="--art-bg:#e9dfcf">
+              <span class="work-card__badge">نموذج استعراضي</span>
+              <div class="mockup mockup--poster">
+                <span class="mockup__label">EDUVIA · PROJECT</span>
+                <div class="mockup__arch"></div>
+                <h4>رؤية 2030<br>بأعين الطلاب</h4>
+                <small>مشروع بحثي · عرض بصري · مصادر</small>
+              </div>
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__cat">مشاريع مدرسية · اجتماعيات</span>
+              <h3>مشروع «رؤية 2030»</h3>
+              <p>لوحة متكاملة تجمع الفكرة والمعلومة.</p>
+            </div>
+            <button class="work-card__open" type="button" aria-label="معاينة مشروع رؤية 2030"></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight section--white">
+      <div class="container container--wide">
+        <div class="cta-panel reveal">
+          <div class="cta-panel__copy">
+            <span class="eyebrow eyebrow--light">جاهزون لسماع فكرتك</span>
+            <h2>أخبرنا ما تحتاجه، ودعنا نصنع الفرق.</h2>
+            <p>اختر الخدمة والمرحلة، واكتب تفاصيل طلبك. ستصلنا الفكرة، ونبدأ من هناك.</p>
+          </div>
+          <div class="cta-panel__actions">
+            <a class="btn btn--gold" href="request.html">
+              اطلب خدمتك الآن
+              <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+            <a class="btn btn--outline-light" href="contact.html">تواصل معنا</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container container--wide">
+      <div class="footer__top">
+        <div class="footer__col footer__brand">
+          <a class="brand" href="index.html" aria-label="إيدوفيا — الصفحة الرئيسية">
+            <img class="brand__mark" src="assets/img/logo.svg" alt="" width="45" height="45" loading="lazy">
+            <span class="brand__text">
+              <span class="brand__latin">EDUVIA</span>
+              <span class="brand__arabic">إيدوفيا</span>
+            </span>
+          </a>
+          <p class="footer__about">مساحة تعليمية إبداعية ترافق الطلاب والطالبات من المرحلة الابتدائية حتى الجامعة، بمحتوى واضح وتصميم يليق بالعمل.</p>
+          <span class="footer__badge"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> المملكة العربية السعودية · عن بُعد</span>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">روابط سريعة</h3>
+          <div class="footer__links">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">من نحن</a>
+            <a href="services.html">الخدمات</a>
+            <a href="portfolio.html">معرض الأعمال</a>
+            <a href="contact.html">تواصل معنا</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">الخدمات</h3>
+          <div class="footer__links">
+            <a href="school-services.html">الخدمات المدرسية</a>
+            <a href="university-services.html">الخدمات الجامعية</a>
+            <a href="request.html">اطلب خدمتك</a>
+            <a href="privacy.html">الخصوصية والشروط</a>
+          </div>
+        </div>
+
+        <div class="footer__col footer__col--contact">
+          <h3 class="footer__title">تواصل معنا</h3>
+          <div class="footer__contact">
+            <a class="footer__contact-item" data-site-email aria-disabled="true"><svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg><span>info@eduvia.example</span></a>
+            <a class="footer__contact-item" data-site-phone aria-disabled="true"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg><span dir="ltr">+966 5X XXX XXXX</span></a>
+          </div>
+          <div class="footer__socials">
+            <a class="social-btn" href="#" data-social="instagram" data-disabled-action="سيتم تفعيل إنستغرام عند اعتماد الحساب الرسمي." aria-disabled="true" aria-label="إنستغرام — قريبًا"><svg class="icon" aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+            <a class="social-btn" href="#" data-social="x" data-disabled-action="سيتم تفعيل منصة X عند اعتماد الحساب الرسمي." aria-disabled="true" aria-label="منصة X — قريبًا"><svg class="icon" aria-hidden="true"><use href="#i-x"></use></svg></a>
+            <a class="social-btn" href="#" data-social="tiktok" data-disabled-action="سيتم تفعيل تيك توك عند اعتماد الحساب الرسمي." aria-disabled="true" aria-label="تيك توك — قريبًا"><svg class="icon" aria-hidden="true"><use href="#i-tiktok"></use></svg></a>
+          </div>
+          <p class="footer__note">بيانات التواصل تجريبية حاليًا، وستُستبدل بالقنوات الرسمية قبل الإطلاق. زر واتساب غير مفعّل حتى اعتماد الرقم.</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span data-current-year>2026</span> EDUVIA | إيدوفيا. جميع الحقوق محفوظة.</span>
+        <div class="footer__bottom-links">
+          <a href="privacy.html">سياسة الخصوصية</a>
+          <a href="admin.html">لوحة الإدارة</a>
+          <span>العربية · English قريبًا</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-fab" href="#" data-whatsapp data-disabled-action="سيتم تفعيل واتساب عند إضافة رقم التواصل الرسمي." aria-disabled="true" aria-label="واتساب — غير مفعّل حاليًا">
+    <span class="whatsapp-fab__icon"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg></span>
+    <span class="whatsapp-fab__text"><strong>واتساب إيدوفيا</strong><small>بانتظار الرقم الرسمي</small></span>
+    <span class="whatsapp-fab__soon">قريبًا</span>
+  </a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

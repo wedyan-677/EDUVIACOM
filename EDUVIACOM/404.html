@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    document.documentElement.classList.add("js");
+    window.setTimeout(function () {
+      if (!window.EDUVIA) document.documentElement.classList.remove("js");
+    }, 3000);
+  </script>
+  <title>الصفحة غير موجودة | EDUVIA إيدوفيا</title>
+  <meta name="description" content="الصفحة التي تبحث عنها غير موجودة. عد إلى الصفحة الرئيسية أو تصفح خدمات إيدوفيا.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#0a1220">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Outfit:wght@400;500;600&family=Tajawal:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body data-page="404">
+  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+
+  <div class="topbar">
+    <div class="container container--wide topbar__inner">
+      <span class="topbar__note"><i class="topbar__dot"></i> مساحة تعليمية إبداعية · المملكة العربية السعودية</span>
+      <div class="topbar__meta"><span>من الابتدائي إلى الجامعة</span><span class="topbar__lang"><svg class="icon" aria-hidden="true"><use href="#i-globe"></use></svg> العربية</span></div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container container--wide header__inner">
+      <a class="brand" href="index.html" aria-label="إيدوفيا — الصفحة الرئيسية">
+        <img class="brand__mark" src="assets/img/logo.svg" alt="" width="45" height="45">
+        <span class="brand__text"><span class="brand__latin">EDUVIA</span><span class="brand__arabic">إيدوفيا</span></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="التنقل الرئيسي">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">الخدمات</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">معرض الأعمال</a></li>
+          <li class="nav-item"><a class="nav-link" href="request.html">اطلب خدمتك</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+        </ul>
+        <a class="btn btn--primary site-nav__cta" href="request.html">اطلب خدمتك الآن <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+      </nav>
+      <div class="header__actions">
+        <a class="btn btn--navy header__cta" href="request.html">اطلب خدمتك <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="فتح القائمة">
+          <svg class="icon nav-toggle__open" aria-hidden="true"><use href="#i-menu"></use></svg>
+          <svg class="icon nav-toggle__close" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="error-page">
+      <div class="error-page__inner">
+        <span class="error-page__code">404</span>
+        <h1>الصفحة تبدو خارج المسار.</h1>
+        <p>الرابط الذي فتحته قد يكون قديمًا أو غير مكتمل. لا بأس، يمكنك العودة إلى الرئيسية أو البدء من الخدمات.</p>
+        <div class="error-page__links">
+          <a class="btn btn--primary" href="index.html">العودة للرئيسية <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+          <a class="btn btn--outline" href="services.html">تصفح الخدمات</a>
+        </div>
+
+        <div class="quick-links" aria-label="روابط سريعة">
+          <a href="school-services.html">الخدمات المدرسية<small>ابتدائي · متوسط · ثانوي</small></a>
+          <a href="university-services.html">الخدمات الجامعية<small>مشاريع · أبحاث · عروض</small></a>
+          <a href="portfolio.html">معرض الأعمال<small>نماذج استعراضية</small></a>
+          <a href="request.html">اطلب خدمتك<small>نموذج طلب مباشر</small></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container container--wide">
+      <div class="footer__bottom" style="border:0;margin:0;padding-block:1.5rem">
+        <span>© <span data-current-year>2026</span> EDUVIA | إيدوفيا. جميع الحقوق محفوظة.</span>
+        <div class="footer__bottom-links"><a href="privacy.html">سياسة الخصوصية</a><a href="contact.html">تواصل معنا</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-fab" href="#" data-whatsapp data-disabled-action="سيتم تفعيل واتساب عند إضافة رقم التواصل الرسمي." aria-disabled="true" aria-label="واتساب — غير مفعّل حاليًا">
+    <span class="whatsapp-fab__icon"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg></span>
+    <span class="whatsapp-fab__text"><strong>واتساب إيدوفيا</strong><small>بانتظار الرقم الرسمي</small></span>
+    <span class="whatsapp-fab__soon">قريبًا</span>
+  </a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

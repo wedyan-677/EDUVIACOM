@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    document.documentElement.classList.add("js");
+    window.setTimeout(function () {
+      if (!window.EDUVIA) document.documentElement.classList.remove("js");
+    }, 3000);
+  </script>
+  <title>لوحة الإدارة التجريبية | EDUVIA إيدوفيا</title>
+  <meta name="description" content="لوحة إدارة محلية تجريبية لعرض الطلبات والرسائل وإدارة المحتوى في موقع إيدوفيا.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0a1220">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Outfit:wght@400;500;600&family=Tajawal:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body class="admin-body" data-page="admin">
+  <a class="skip-link" href="#admin-main-content">انتقل إلى المحتوى</a>
+
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <a class="brand" href="index.html" aria-label="إيدوفيا — الصفحة الرئيسية">
+        <img class="brand__mark" src="assets/img/logo.svg" alt="" width="45" height="45">
+        <span class="brand__text"><span class="brand__latin">EDUVIA</span><span class="brand__arabic">إيدوفيا</span></span>
+      </a>
+
+      <nav class="admin-nav" aria-label="أقسام لوحة التحكم">
+        <button class="admin-nav__link is-active" type="button" data-admin-view="overview">
+          <svg class="icon" aria-hidden="true"><use href="#i-home"></use></svg> نظرة عامة
+        </button>
+        <button class="admin-nav__link" type="button" data-admin-view="requests">
+          <svg class="icon" aria-hidden="true"><use href="#i-file"></use></svg> الطلبات
+        </button>
+        <button class="admin-nav__link" type="button" data-admin-view="messages">
+          <svg class="icon" aria-hidden="true"><use href="#i-message"></use></svg> الرسائل
+        </button>
+        <button class="admin-nav__link" type="button" data-admin-view="content">
+          <svg class="icon" aria-hidden="true"><use href="#i-layers"></use></svg> إدارة المحتوى
+        </button>
+        <button class="admin-nav__link" type="button" data-admin-view="settings">
+          <svg class="icon" aria-hidden="true"><use href="#i-settings"></use></svg> إعدادات التواصل
+        </button>
+      </nav>
+
+      <div class="admin-sidebar__foot">
+        <strong>نسخة محلية تجريبية</strong>
+        البيانات تُحفظ في هذا المتصفح فقط. لا يوجد خادم أو تسجيل دخول حقيقي في هذه النسخة.
+      </div>
+    </aside>
+
+    <main class="admin-main" id="admin-main-content">
+      <header class="admin-topbar">
+        <div>
+          <h1 id="admin-page-title">نظرة عامة</h1>
+          <p id="admin-header-note">0 طلب · 0 رسالة غير مقروءة</p>
+        </div>
+        <div class="admin-topbar__actions">
+          <span class="admin-demo-badge"><svg class="icon" aria-hidden="true"><use href="#i-info"></use></svg> تجريبي</span>
+          <span class="admin-topbar__date" id="admin-date"></span>
+          <button class="icon-btn" type="button" id="refresh-dashboard" aria-label="تحديث البيانات" title="تحديث البيانات">
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-left"></use></svg>
+          </button>
+          <a class="btn btn--outline btn--sm" href="index.html">
+            الموقع
+            <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-external"></use></svg>
+          </a>
+        </div>
+      </header>
+
+      <div class="admin-content">
+        <!-- Overview ------------------------------------------------------ -->
+        <section class="admin-view is-active" data-admin-panel="overview" aria-label="نظرة عامة">
+          <div class="admin-stats admin-stats--five">
+            <article class="admin-stat">
+              <div class="admin-stat__top">إجمالي الطلبات <span class="admin-stat__icon"><svg class="icon" aria-hidden="true"><use href="#i-file"></use></svg></span></div>
+              <strong id="stat-total">0</strong>
+              <small id="stat-requests-note">لا توجد طلبات بعد</small>
+            </article>
+            <article class="admin-stat">
+              <div class="admin-stat__top">طلبات جديدة <span class="admin-stat__icon"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"></use></svg></span></div>
+              <strong id="stat-new">0</strong>
+              <small>بانتظار المراجعة</small>
+            </article>
+            <article class="admin-stat">
+              <div class="admin-stat__top">قيد التنفيذ <span class="admin-stat__icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"></use></svg></span></div>
+              <strong id="stat-progress">0</strong>
+              <small>جاري العمل عليها</small>
+            </article>
+            <article class="admin-stat">
+              <div class="admin-stat__top">مكتملة <span class="admin-stat__icon"><svg class="icon" aria-hidden="true"><use href="#i-check-circle"></use></svg></span></div>
+              <strong id="stat-done">0</strong>
+              <small>تم تسليمها</small>
+            </article>
+            <article class="admin-stat">
+              <div class="admin-stat__top">رسائل غير مقروءة <span class="admin-stat__icon"><svg class="icon" aria-hidden="true"><use href="#i-message"></use></svg></span></div>
+              <strong id="stat-unread">0</strong>
+              <small id="stat-messages-note">لا توجد رسائل بعد</small>
+            </article>
+          </div>
+
+          <div class="admin-two-col">
+            <div class="admin-panel">
+              <div class="admin-panel__head">
+                <h3>أحدث الطلبات</h3>
+                <button class="btn btn--ghost btn--sm" type="button" data-admin-view="requests">عرض الكل</button>
+              </div>
+              <div class="admin-table-wrap">
+                <table class="admin-table">
+                  <thead>
+                    <tr><th>العميل</th><th>الخدمة</th><th>التاريخ</th><th>الحالة</th><th>إجراء</th></tr>
+                  </thead>
+                  <tbody id="recent-requests-body">
+                    <tr><td colspan="5"><div class="admin-empty">لا توجد طلبات حتى الآن.</div></td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="admin-panel">
+              <div class="admin-panel__head">
+                <h3>أحدث الرسائل</h3>
+                <button class="btn btn--ghost btn--sm" type="button" data-admin-view="messages">عرض الكل</button>
+              </div>
+              <div class="admin-card-list" id="recent-messages">
+                <div class="admin-empty">لا توجد رسائل بعد.</div>
+              </div>
+              <div class="admin-card-list" style="border-block-start:1px solid var(--line)">
+                <div class="admin-settings__note" style="grid-column:auto">
+                  <strong>كيف تجرب اللوحة؟</strong> أرسل طلبًا من صفحة <a href="request.html">اطلب خدمتك</a> أو رسالة من صفحة <a href="contact.html">تواصل معنا</a>، ثم ارجع إلى هنا وحدّث الصفحة.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Requests ----------------------------------------------------- -->
+        <section class="admin-view" data-admin-panel="requests" aria-label="إدارة الطلبات">
+          <div class="admin-view__head">
+            <div>
+              <h2>إدارة الطلبات</h2>
+              <p>راجع الطلبات، غيّر الحالة، وصدّر البيانات بصيغة CSV.</p>
+            </div>
+            <button class="btn btn--navy btn--sm" type="button" id="export-requests">
+              <svg class="icon" aria-hidden="true"><use href="#i-download"></use></svg>
+              تصدير CSV
+            </button>
+          </div>
+
+          <div class="admin-panel">
+            <div class="admin-panel__head">
+              <h3>كل الطلبات</h3>
+              <div class="admin-toolbar">
+                <div class="admin-search">
+                  <svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg>
+                  <input type="search" id="request-search" placeholder="ابحث بالاسم أو الرقم أو المرجع" aria-label="بحث في الطلبات">
+                </div>
+                <select class="admin-filter" id="request-status-filter" aria-label="تصفية حسب الحالة">
+                  <option value="all">كل الحالات</option>
+                  <option value="new">جديد</option>
+                  <option value="progress">قيد التنفيذ</option>
+                  <option value="done">مكتمل</option>
+                  <option value="cancelled">ملغي</option>
+                </select>
+              </div>
+            </div>
+            <div class="admin-table-wrap">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>العميل</th>
+                    <th>الجوال</th>
+                    <th>المرحلة</th>
+                    <th>الخدمة</th>
+                    <th>موعد التسليم</th>
+                    <th>الحالة</th>
+                    <th>إجراءات</th>
+                  </tr>
+                </thead>
+                <tbody id="requests-body">
+                  <tr><td colspan="7"><div class="admin-empty">لا توجد طلبات حتى الآن.</div></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Messages ----------------------------------------------------- -->
+        <section class="admin-view" data-admin-panel="messages" aria-label="الرسائل الواردة">
+          <div class="admin-view__head">
+            <div>
+              <h2>الرسائل الواردة</h2>
+              <p>رسائل صفحة التواصل. فتح الرسالة يعلّمها كمقروءة.</p>
+            </div>
+          </div>
+          <div class="admin-panel">
+            <div class="admin-panel__head"><h3>صندوق الرسائل</h3></div>
+            <div class="admin-card-list" id="messages-list">
+              <div class="admin-empty">لا توجد رسائل واردة حتى الآن.</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Content ------------------------------------------------------ -->
+        <section class="admin-view" data-admin-panel="content" aria-label="إدارة المحتوى">
+          <div class="admin-view__head">
+            <div>
+              <h2>إدارة المحتوى</h2>
+              <p>أضف خدمات أو نماذج أعمال تظهر مباشرة في صفحات الموقع على هذا المتصفح.</p>
+            </div>
+          </div>
+
+          <div class="admin-two-col">
+            <div class="admin-panel">
+              <div class="admin-panel__head"><h3>إضافة خدمة</h3></div>
+              <form class="admin-form-grid" id="add-service-form" style="padding:1rem">
+                <div class="form-group">
+                  <label class="form-label" for="service-title">اسم الخدمة</label>
+                  <input class="form-control" type="text" id="service-title" placeholder="مثال: تصميم بطاقات تعليمية" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="service-category">التصنيف</label>
+                  <select class="form-control" id="service-category">
+                    <option value="school">خدمة مدرسية</option>
+                    <option value="university">خدمة جامعية</option>
+                  </select>
+                </div>
+                <div class="form-group form-group--full">
+                  <label class="form-label" for="service-description">وصف مختصر</label>
+                  <textarea class="form-control" id="service-description" rows="3" placeholder="وصف من 10 أحرف على الأقل" required></textarea>
+                </div>
+                <div class="form-group form-group--full">
+                  <button class="btn btn--primary btn--sm" type="submit">
+                    <svg class="icon" aria-hidden="true"><use href="#i-plus"></use></svg>
+                    إضافة الخدمة
+                  </button>
+                </div>
+              </form>
+              <div class="admin-card-list" id="services-list">
+                <div class="admin-empty">لا توجد خدمات مضافة.</div>
+              </div>
+            </div>
+
+            <div class="admin-panel">
+              <div class="admin-panel__head"><h3>إضافة عمل للمعرض</h3></div>
+              <form class="admin-form-grid" id="add-work-form" style="padding:1rem">
+                <div class="form-group">
+                  <label class="form-label" for="work-title">عنوان العمل</label>
+                  <input class="form-control" type="text" id="work-title" placeholder="مثال: مطوية «دورة الماء»" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="work-category">التصنيف</label>
+                  <select class="form-control" id="work-category">
+                    <option value="brochure">مطويات</option>
+                    <option value="presentation">عروض</option>
+                    <option value="project">مشاريع</option>
+                    <option value="worksheet">أوراق عمل</option>
+                    <option value="infographic">إنفوجرافيك</option>
+                    <option value="report">تقارير</option>
+                    <option value="activity">أنشطة</option>
+                    <option value="summary">تلخيص</option>
+                  </select>
+                </div>
+                <div class="form-group form-group--full">
+                  <label class="form-label" for="work-description">وصف العمل</label>
+                  <textarea class="form-control" id="work-description" rows="3" placeholder="وصف من 8 أحرف على الأقل" required></textarea>
+                </div>
+                <div class="form-group form-group--full">
+                  <label class="form-label" for="work-tags">وسوم (اختياري)</label>
+                  <input class="form-control" type="text" id="work-tags" placeholder="مطويات|علوم|ابتدائي">
+                </div>
+                <div class="form-group form-group--full">
+                  <button class="btn btn--primary btn--sm" type="submit">
+                    <svg class="icon" aria-hidden="true"><use href="#i-plus"></use></svg>
+                    إضافة العمل
+                  </button>
+                </div>
+              </form>
+              <div class="admin-card-list" id="works-list">
+                <div class="admin-empty">لا توجد أعمال مضافة.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Settings ----------------------------------------------------- -->
+        <section class="admin-view" data-admin-panel="settings" aria-label="إعدادات التواصل">
+          <div class="admin-view__head">
+            <div>
+              <h2>إعدادات التواصل</h2>
+              <p>عند إدخال بريد أو رقم حقيقي، تُفعّل روابط التواصل تلقائيًا في صفحات الموقع بعد إعادة التحميل.</p>
+            </div>
+          </div>
+          <div class="admin-panel">
+            <div class="admin-panel__head"><h3>بيانات التواصل والحسابات</h3></div>
+            <form class="admin-settings" id="settings-form">
+              <div class="form-group">
+                <label class="form-label" for="settings-email">البريد الإلكتروني</label>
+                <input class="form-control" type="email" id="settings-email" dir="ltr" placeholder="info@eduvia.example">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="settings-phone">رقم الهاتف</label>
+                <input class="form-control" type="tel" id="settings-phone" dir="ltr" placeholder="+966 5X XXX XXXX">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="settings-whatsapp">رقم واتساب (بصيغة دولية)</label>
+                <input class="form-control" type="tel" id="settings-whatsapp" dir="ltr" placeholder="9665XXXXXXXX">
+                <span class="form-hint">اتركه فارغًا لإبقاء زر واتساب غير مفعّل.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="settings-instagram">رابط إنستغرام</label>
+                <input class="form-control" type="url" id="settings-instagram" dir="ltr" placeholder="https://instagram.com/...">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="settings-x">رابط منصة X</label>
+                <input class="form-control" type="url" id="settings-x" dir="ltr" placeholder="https://x.com/...">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="settings-tiktok">رابط تيك توك</label>
+                <input class="form-control" type="url" id="settings-tiktok" dir="ltr" placeholder="https://tiktok.com/@...">
+              </div>
+              <p class="admin-settings__note">
+                <strong>ملاحظة:</strong> هذه الإعدادات محلية لهذا المتصفح. لا تُنشر على الإنترنت، ولا تُعد بديلًا عن إعدادات الخادم الرسمية عند الإطلاق. البريد والرقم المعروضان افتراضًا تجريبيان.
+              </p>
+              <div class="form-group form-group--full">
+                <button class="btn btn--primary btn--sm" type="submit">
+                  <svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg>
+                  حفظ الإعدادات
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <div class="admin-modal" id="admin-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="admin-modal-title">
+    <div class="admin-modal__dialog">
+      <div class="admin-modal__head">
+        <h3 id="admin-modal-title">تفاصيل</h3>
+        <button class="icon-btn admin-modal__close" type="button" aria-label="إغلاق النافذة">
+          <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+      <div id="admin-modal-body"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/admin.js" defer></script>
+</body>
+</html>
